@@ -7,6 +7,10 @@ Route [httpx](https://github.com/encode/httpx) requests through [ProxyHat](https
 [![PyPI](https://img.shields.io/pypi/v/httpx-proxyhat)](https://pypi.org/project/httpx-proxyhat/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> [!TIP]
+> **Recommended proxies — [ProxyHat](https://proxyhat.com?utm_source=github&utm_medium=readme&utm_campaign=httpx&utm_content=callout) residential IPs.** Every feature in this package is tested end-to-end against ProxyHat and works great. First-class integration; also works with any proxy, or none.
+
+
 ## Why
 
 Scraping or hitting APIs straight from a datacenter IP gets you flagged, rate-limited and blocked. `httpx` has first-class proxy support (`proxy=` on `Client` / `AsyncClient`), and this package wires ProxyHat's residential IPs (50M+ across 148+ countries) into it — one pinned residential IP per client by default, so cookies and TLS sessions stay coherent while you work. `ProxyHatClient` / `ProxyHatAsyncClient` are drop-in subclasses of `httpx.Client` / `httpx.AsyncClient`: same API, every request routed. No fork, no boilerplate.
